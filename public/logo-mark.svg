@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 120">
+<text x="8" y="83" font-family="Arial,Helvetica,sans-serif" font-size="88" font-weight="900" letter-spacing="-9" fill="#1474b8">4</text>
+<text x="69" y="83" font-family="Arial,Helvetica,sans-serif" font-size="88" font-weight="900" letter-spacing="-7" fill="#17203d">M</text>
+<path d="M28 73h28v17c0 8-6 14-14 14s-14-6-14-14z" fill="#f8f8f5" stroke="#17203d" stroke-width="3"/>
+<path d="M56 78h7c7 0 7 13 0 13h-7" fill="none" stroke="#17203d" stroke-width="4"/>
+<path d="M25 106h42" stroke="#1474b8" stroke-width="5" stroke-linecap="round"/>
+</svg>
