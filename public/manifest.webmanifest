@@ -1,0 +1,25 @@
+{
+  "id": "/",
+  "name": "4M COFFEE",
+  "short_name": "4M COFFEE",
+  "description": "4M COFFEE — Crafted for Your Moment.",
+  "lang": "id",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "display_override": [
+    "standalone",
+    "minimal-ui"
+  ],
+  "orientation": "portrait",
+  "background_color": "#eaf0f7",
+  "theme_color": "#1474b8",
+  "icons": [
+    {
+      "src": "/pwa-icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
