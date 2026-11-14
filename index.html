@@ -28,7 +28,8 @@
     body{background:var(--paper);color:var(--ink)}
     .topline{height:5px;background:linear-gradient(90deg,#a98663,#e8d7c1,#a98663)}
     header{background:rgba(238,232,223,.88);border:0;box-shadow:0 5px 16px #cfc5b944}
-    .brandmark{border:0;background:var(--paper);box-shadow:6px 6px 12px var(--neo-lo),-6px -6px 12px var(--neo-hi)}
+    .brandmark{border:0;background:#eee8df;box-shadow:6px 6px 12px var(--neo-lo),-6px -6px 12px var(--neo-hi);overflow:hidden}
+    .brandmark img{width:100%;height:100%;object-fit:contain;padding:2px}
     .navlinks a{color:#74665a}
     .btn{border:0;border-radius:14px;padding:14px 20px;background:#e9e1d7;color:#61472f;box-shadow:6px 6px 12px #cfc5b9,-6px -6px 12px #fffaf2;font-weight:700;letter-spacing:.08em}
     .btn:hover{background:#e9e1d7;color:#8b6548;transform:translateY(-2px);box-shadow:3px 3px 7px #cfc5b9,-3px -3px 7px #fffaf2}
@@ -82,7 +83,7 @@
 <body>
   <div class="topline"></div>
   <header><nav class="nav">
-    <a class="brand" href="#home"><span class="brandmark">4M</span><span class="brandname">4M COFFEE<small>CRAFTED FOR YOUR MOMENT</small></span></a>
+    <a class="brand" href="#home"><span class="brandmark"><img src="/logo-mark.svg" alt="4M Coffee logo"></span><span class="brandname">4M COFFEE<small>CRAFTED FOR YOUR MOMENT</small></span></a>
     <div class="navlinks" id="navlinks"><a href="#home">HOME</a><a href="#menu">OUR MENU</a><a href="#story">OUR STORY</a><a href="#visit">FIND US</a></div>
     <div class="nav-actions"><a class="btn" href="#menu">Explore Menu</a><button class="menu-toggle" id="menuToggle" aria-label="Open menu">☰</button></div>
   </nav></header>
@@ -99,7 +100,7 @@
   <button class="admin-fab" id="openAdmin">✦ Admin Panel</button>
   <div class="admin-overlay" id="adminOverlay">
     <div class="admin-shell">
-      <aside class="admin-side"><a class="brand" href="#"><span class="brandmark">4M</span><span class="brandname">4M COFFEE<small>MANAGEMENT</small></span></a><div class="admin-label">WORKSPACE</div><button class="admin-tab active" data-view="overview">▦ &nbsp; Overview</button><button class="admin-tab" data-view="pos">＋ &nbsp; Kasir / POS</button><button class="admin-tab" data-view="products">◇ &nbsp; Produk</button><button class="admin-tab" data-view="history">▤ &nbsp; Riwayat transaksi</button></aside>
+      <aside class="admin-side"><a class="brand" href="#"><span class="brandmark"><img src="/logo-mark.svg" alt="4M Coffee logo"></span><span class="brandname">4M COFFEE<small>MANAGEMENT</small></span></a><div class="admin-label">WORKSPACE</div><button class="admin-tab active" data-view="overview">▦ &nbsp; Overview</button><button class="admin-tab" data-view="pos">＋ &nbsp; Kasir / POS</button><button class="admin-tab" data-view="products">◇ &nbsp; Produk</button><button class="admin-tab" data-view="history">▤ &nbsp; Riwayat transaksi</button></aside>
       <section class="admin-main"><div class="admin-top"><div><div class="eyebrow">4M COFFEE / MANAGEMENT</div><h2 id="adminTitle">Overview</h2></div><button class="close-admin" id="closeAdmin" aria-label="Close">×</button></div>
         <div class="admin-view active" id="view-overview"><div class="stats"><div class="stat"><small>PENDAPATAN HARI INI</small><strong id="statToday">Rp0</strong></div><div class="stat"><small>TRANSAKSI HARI INI</small><strong id="statCount">0</strong></div><div class="stat"><small>PRODUK TERJUAL</small><strong id="statSold">0</strong></div><div class="stat"><small>TOTAL PENDAPATAN</small><strong id="statAll">Rp0</strong></div></div><div class="panel"><h3>Ringkasan pendapatan</h3><div style="height:190px"><canvas id="salesChart" width="800" height="190" style="width:100%;height:100%"></canvas></div></div><div class="panel"><h3>Transaksi terbaru</h3><div class="table-wrap"><table><thead><tr><th>No. Transaksi</th><th>Waktu</th><th>Item</th><th>Total</th><th>Pembayaran</th></tr></thead><tbody id="recentRows"></tbody></table></div></div></div>
         <div class="admin-view" id="view-pos"><div class="pos-layout"><div class="panel"><h3>Pilih produk</h3><div id="posProducts"></div></div><div class="panel"><h3>Keranjang</h3><div id="cartItems"><div class="empty">Belum ada produk dipilih</div></div><div class="cart-total"><span>Total</span><span id="cartTotal">Rp0</span></div><div class="field"><label>METODE PEMBAYARAN</label><select id="paymentMethod"><option>Cash</option><option>QRIS</option><option>Debit</option><option>Transfer</option></select></div><button class="btn full" id="checkoutBtn">Selesaikan transaksi</button></div></div></div>
