@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <rect width="512" height="512" rx="112" fill="#eaf0f7"/>
+  <rect x="34" y="34" width="444" height="444" rx="92" fill="#eaf0f7" stroke="#c5d0df" stroke-width="10"/>
+  <text x="72" y="333" font-family="Arial,Helvetica,sans-serif" font-size="250" font-weight="900" letter-spacing="-28" fill="#1474b8">4</text>
+  <text x="244" y="333" font-family="Arial,Helvetica,sans-serif" font-size="250" font-weight="900" letter-spacing="-24" fill="#17203d">M</text>
+  <path d="M142 337h94v56c0 28-21 49-47 49s-47-21-47-49z" fill="#f8fbff" stroke="#17203d" stroke-width="12"/>
+  <path d="M236 351h20c26 0 26 47 0 47h-20" fill="none" stroke="#17203d" stroke-width="13"/>
+  <path d="M132 455h136" stroke="#1474b8" stroke-width="14" stroke-linecap="round"/>
+</svg>
