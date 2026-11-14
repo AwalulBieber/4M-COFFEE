@@ -5,6 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="theme-color" content="#17130f" />
   <meta name="description" content="4M COFFEE — crafted coffee, warm moments." />
+  <link rel="manifest" href="/manifest.webmanifest" />
+  <link rel="icon" type="image/svg+xml" href="/pwa-icon.svg" />
+  <link rel="apple-touch-icon" href="/pwa-icon.svg" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <meta name="apple-mobile-web-app-title" content="4M COFFEE" />
   <title>4M COFFEE — Crafted for Your Moment</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -163,6 +170,7 @@
   </div>
   <div id="receiptModal" class="admin-overlay" style="z-index:70"><div class="panel" style="max-width:480px;margin:25px auto;padding:24px"><div id="receiptContent"></div><div style="display:flex;gap:10px;margin-top:18px"><button class="btn full" id="printReceipt">Cetak / Simpan PDF</button><button class="btn btn-outline full" id="closeReceipt">Tutup</button></div></div></div>
   <script>
+    if ("serviceWorker" in navigator) { window.addEventListener("load", () => navigator.serviceWorker.register("/service-worker.js").catch(err => console.warn("PWA service worker:", err))); }
     const starterProducts=[
       {id:1,name:'Caramel',category:'Coffee',price:18000,image:'https://images.unsplash.com/photo-1570968915860-54d5c301fa9f?auto=format&fit=crop&w=900&q=80',desc:'Kopi dengan rasa caramel.'},
       {id:2,name:'Butterscotch',category:'Coffee',price:18000,image:'https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=900&q=80',desc:'Kopi dengan rasa butterscotch.'},
