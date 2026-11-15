@@ -172,39 +172,39 @@
   <script>
     if ("serviceWorker" in navigator) { window.addEventListener("load", () => navigator.serviceWorker.register("/service-worker.js").catch(err => console.warn("PWA service worker:", err))); }
     const starterProducts=[
-      {id:1,name:'Caramel',category:'Coffee',price:18000,image:'/caramel-latte.webp',desc:'Kopi dengan rasa caramel.'},
-      {id:2,name:'Butterscotch',category:'Coffee',price:18000,image:'/es-kopi-susu.webp',desc:'Kopi dengan rasa butterscotch.'},
-      {id:3,name:'Vanilla',category:'Coffee',price:18000,image:'/caramel-latte.webp',desc:'Kopi dengan rasa vanilla.'},
-      {id:4,name:'Gula Aren',category:'Coffee',price:18000,image:'/es-kopi-susu.webp',desc:'Kopi susu gula aren.'},
-      {id:5,name:'Salted Caramel',category:'Coffee',price:18000,image:'/caramel-latte.webp',desc:'Kopi dengan rasa salted caramel.'},
-      {id:6,name:'Crème Brûlée',category:'Coffee',price:18000,image:'/es-kopi-susu.webp',desc:'Kopi dengan rasa crème brûlée.'},
-      {id:7,name:'Hazelnut',category:'Coffee',price:18000,image:'/caramel-latte.webp',desc:'Kopi dengan rasa hazelnut.'},
-      {id:8,name:'Tiramisu',category:'Coffee',price:18000,image:'/es-kopi-susu.webp',desc:'Kopi dengan rasa tiramisu.'},
-      {id:9,name:'Matcha Latte',category:'Non-Coffee',price:18000,image:'/matcha-latte.webp',desc:'Matcha latte creamy.'},
-      {id:10,name:'Matcha Strawberry',category:'Non-Coffee',price:20000,image:'/strawberry-milk.webp',desc:'Perpaduan matcha dan strawberry.'},
-      {id:11,name:'Korean Strawberry Milk',category:'Non-Coffee',price:20000,image:'/strawberry-milk.webp',desc:'Susu strawberry segar.'},
-      {id:12,name:'Blue Ocean',category:'Non-Coffee',price:18000,image:'/blue-ocean.webp',desc:'Minuman segar Blue Ocean.'},
-      {id:13,name:'Lychee Squash',category:'Non-Coffee',price:18000,image:'/blue-ocean.webp',desc:'Squash leci yang menyegarkan.'},
-      {id:14,name:'Lemon Squash',category:'Non-Coffee',price:18000,image:'/blue-ocean.webp',desc:'Squash lemon yang menyegarkan.'},
-      {id:15,name:'Es Kepal Milo',category:'Non-Coffee',price:5000,image:'/strawberry-milk.webp',desc:'Es kepal Milo.'},
-      {id:16,name:'Good Day',category:'Non-Coffee',price:7000,image:'/es-kopi-susu.webp',desc:'Minuman Good Day.'},
-      {id:17,name:'Kuku Bima Susu',category:'Non-Coffee',price:7000,image:'/blue-ocean.webp',desc:'Kuku Bima dicampur susu.'},
-      {id:18,name:'Extra Joss Susu',category:'Non-Coffee',price:7000,image:'/blue-ocean.webp',desc:'Extra Joss dicampur susu.'},
-      {id:19,name:'Pop Ice',category:'Non-Coffee',price:5000,image:'/strawberry-milk.webp',desc:'Minuman Pop Ice.'},
-      {id:20,name:'Es Teh',category:'Non-Coffee',price:5000,image:'/blue-ocean.webp',desc:'Es teh segar.'},
-      {id:21,name:'Sosis Besar (Goreng/Bakar)',category:'Snacks',price:10000,image:'/sosis-bakar.webp',desc:'Sosis besar, tersedia goreng atau bakar.'},
-      {id:22,name:'Sosis Kecil (Goreng/Bakar)',category:'Snacks',price:5000,image:'/sosis-bakar.webp',desc:'Sosis kecil, tersedia goreng atau bakar.'},
-      {id:23,name:'Pentol (Goreng/Bakar)',category:'Snacks',price:5000,image:'/tahu-bulat.webp',desc:'Pentol, tersedia goreng atau bakar.'},
-      {id:24,name:'Burger Besar',category:'Snacks',price:15000,image:'/burger-beef.webp',desc:'Burger ukuran besar.'},
-      {id:25,name:'Burger Kecil',category:'Snacks',price:10000,image:'/burger-beef.webp',desc:'Burger ukuran kecil.'},
-      {id:26,name:'Cireng Ayam Suwir',category:'Snacks',price:15000,image:'/ayam-crispy.webp',desc:'Cireng isi ayam suwir.'},
-      {id:27,name:'Nugget',category:'Snacks',price:15000,image:'/chicken-nugget.webp',desc:'Nugget goreng.'},
-      {id:28,name:'Kentang Goreng',category:'Snacks',price:10000,image:'/kentang-goreng.webp',desc:'Kentang goreng renyah.'},
-      {id:29,name:'Tahu Bakso',category:'Snacks',price:5000,image:'/tahu-bulat.webp',desc:'Tahu bakso.'}
-    ];
-    const money=n=>'Rp'+Number(n||0).toLocaleString('id-ID');
+{id:1,name:'Caramel',category:'Coffee',price:18000,image:'/caramel-latte.webp',desc:'Kopi dengan rasa caramel.'},
+{id:2,name:'Butterscotch',category:'Coffee',price:18000,image:'',desc:'Kopi dengan rasa butterscotch.'},
+{id:3,name:'Vanilla',category:'Coffee',price:18000,image:'',desc:'Kopi dengan rasa vanilla.'},
+{id:4,name:'Gula Aren',category:'Coffee',price:18000,image:'/es-kopi-susu.webp',desc:'Kopi susu gula aren.'},
+{id:5,name:'Salted Caramel',category:'Coffee',price:18000,image:'',desc:'Kopi dengan rasa salted caramel.'},
+{id:6,name:'Crème Brûlée',category:'Coffee',price:18000,image:'',desc:'Kopi dengan rasa crème brûlée.'},
+{id:7,name:'Hazelnut',category:'Coffee',price:18000,image:'',desc:'Kopi dengan rasa hazelnut.'},
+{id:8,name:'Tiramisu',category:'Coffee',price:18000,image:'',desc:'Kopi dengan rasa tiramisu.'},
+{id:9,name:'Matcha Latte',category:'Non-Coffee',price:18000,image:'/matcha-latte.webp',desc:'Matcha latte creamy.'},
+{id:10,name:'Matcha Strawberry',category:'Non-Coffee',price:20000,image:'',desc:'Perpaduan matcha dan strawberry.'},
+{id:11,name:'Korean Strawberry Milk',category:'Non-Coffee',price:20000,image:'/strawberry-milk.webp',desc:'Susu strawberry segar.'},
+{id:12,name:'Blue Ocean',category:'Non-Coffee',price:18000,image:'/blue-ocean.webp',desc:'Minuman segar Blue Ocean.'},
+{id:13,name:'Lychee Squash',category:'Non-Coffee',price:18000,image:'',desc:'Squash leci yang menyegarkan.'},
+{id:14,name:'Lemon Squash',category:'Non-Coffee',price:18000,image:'',desc:'Squash lemon yang menyegarkan.'},
+{id:15,name:'Es Kepal Milo',category:'Non-Coffee',price:5000,image:'',desc:'Es kepal Milo.'},
+{id:16,name:'Good Day',category:'Non-Coffee',price:7000,image:'',desc:'Minuman Good Day.'},
+{id:17,name:'Kuku Bima Susu',category:'Non-Coffee',price:7000,image:'',desc:'Kuku Bima dicampur susu.'},
+{id:18,name:'Extra Joss Susu',category:'Non-Coffee',price:7000,image:'',desc:'Extra Joss dicampur susu.'},
+{id:19,name:'Pop Ice',category:'Non-Coffee',price:5000,image:'',desc:'Minuman Pop Ice.'},
+{id:20,name:'Es Teh',category:'Non-Coffee',price:5000,image:'',desc:'Es teh segar.'},
+{id:21,name:'Sosis Besar (Goreng/Bakar)',category:'Snacks',price:10000,image:'/sosis-bakar.webp',desc:'Sosis besar, tersedia goreng atau bakar.'},
+{id:22,name:'Sosis Kecil (Goreng/Bakar)',category:'Snacks',price:5000,image:'',desc:'Sosis kecil, tersedia goreng atau bakar.'},
+{id:23,name:'Pentol (Goreng/Bakar)',category:'Snacks',price:5000,image:'',desc:'Pentol, tersedia goreng atau bakar.'},
+{id:24,name:'Burger Besar',category:'Snacks',price:15000,image:'/burger-beef.webp',desc:'Burger ukuran besar.'},
+{id:25,name:'Burger Kecil',category:'Snacks',price:10000,image:'',desc:'Burger ukuran kecil.'},
+{id:26,name:'Cireng Ayam Suwir',category:'Snacks',price:15000,image:'',desc:'Cireng isi ayam suwir.'},
+{id:27,name:'Nugget',category:'Snacks',price:15000,image:'/chicken-nugget.webp',desc:'Nugget goreng.'},
+{id:28,name:'Kentang Goreng',category:'Snacks',price:10000,image:'/kentang-goreng.webp',desc:'Kentang goreng renyah.'},
+{id:29,name:'Tahu Bakso',category:'Snacks',price:5000,image:'',desc:'Tahu bakso.'}
+];
+const money=n=>'Rp'+Number(n||0).toLocaleString('id-ID');
     const load=(key,fallback)=>{try{return JSON.parse(localStorage.getItem(key))??fallback}catch{return fallback}};
-    const catalogVersion='2026-11-15-local-menu-assets-v4';
+    const catalogVersion='2026-11-15-accurate-menu-images-v5';
     let products=load('4m_products',starterProducts),transactions=load('4m_transactions',[]),cart={};
     if(localStorage.getItem('4m_catalog_version')!==catalogVersion){products=starterProducts;localStorage.setItem('4m_products',JSON.stringify(products));localStorage.setItem('4m_catalog_version',catalogVersion)}
     const save=()=>{localStorage.setItem('4m_products',JSON.stringify(products));localStorage.setItem('4m_transactions',JSON.stringify(transactions))};
@@ -230,7 +230,7 @@
       const svg='<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 260"><defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#f8fbff"/><stop offset="1" stop-color="#dce6f1"/></linearGradient><linearGradient id="cup" x2="1"><stop stop-color="#fff" stop-opacity=".88"/><stop offset=".5" stop-color="#fff" stop-opacity=".48"/><stop offset="1" stop-color="#d9e5ed" stop-opacity=".8"/></linearGradient><filter id="shadow"><feDropShadow dx="0" dy="9" stdDeviation="8" flood-color="#64748b" flood-opacity=".22"/></filter></defs><rect width="360" height="260" rx="24" fill="url(#bg)"/><circle cx="180" cy="125" r="94" fill="#fff" opacity=".42"/><ellipse cx="180" cy="216" rx="77" ry="10" fill="#8294a8" opacity=".18"/><g filter="url(#shadow)"><path d="M145 57l-10-31" stroke="#a9c4d8" stroke-width="8" stroke-linecap="round"/><path d="M111 79h138l-12 127q-57 20-114 0Z" fill="url(#cup)" stroke="#fff" stroke-width="5"/>'+liquid+'<path d="M117 139h126v7H117Z" fill="'+b+'" opacity=".5"/><path d="M126 88l-8 105" stroke="#fff" stroke-width="7" opacity=".55" stroke-linecap="round"/><path d="M105 77h150" stroke="#fff" stroke-width="9" stroke-linecap="round"/>'+garnish+'<rect x="133" y="158" width="94" height="25" rx="7" fill="#f8fbff" opacity=".95"/><text x="180" y="169" text-anchor="middle" font-family="Arial,sans-serif" font-size="8" font-weight="800" letter-spacing="1.1" fill="#17203d">4M COFFEE</text><text x="180" y="178" text-anchor="middle" font-family="Arial,sans-serif" font-size="5" letter-spacing=".8" fill="#52617b">CRAFTED DRINKS</text></g><text x="180" y="237" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" font-weight="700" letter-spacing="2" fill="#52617b">'+safe+'</text></svg>';
       return 'data:image/svg+xml;charset=UTF-8,'+encodeURIComponent(svg);
     }
-    function renderPublic(){const order=['Coffee','Non-Coffee','Snacks'];document.getElementById('publicMenu').innerHTML=order.map(category=>{const items=products.filter(p=>p.category===category);if(!items.length)return '';return `<div class="menu-category"><div class="menu-category-head"><span class="eyebrow">4M COFFEE</span><h3>${category}</h3></div><div class="menu-grid">${items.map(p=>`<article class="menu-card"><div class="menu-photo" style="background-image:url('${(p.image||'https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&fit=crop&w=900&q=80')}')"></div><div class="menu-info"><span class="menu-tag">${category}</span><div class="menu-meta"><div><h3>${p.name}</h3><p>${p.desc||'Freshly prepared by 4M COFFEE.'}</p></div><span class="price">${money(p.price)}</span></div></div></article>`).join('')}</div></div>`}).join('')}
+    function renderPublic(){const order=['Coffee','Non-Coffee','Snacks'];document.getElementById('publicMenu').innerHTML=order.map(category=>{const items=products.filter(p=>p.category===category);if(!items.length)return '';return `<div class="menu-category"><div class="menu-category-head"><span class="eyebrow">4M COFFEE</span><h3>${category}</h3></div><div class="menu-grid">${items.map(p=>`<article class="menu-card"><div class="menu-photo" style="background-image:url('${(p.image||productIllustration(p.name,p.category))}')"></div><div class="menu-info"><span class="menu-tag">${category}</span><div class="menu-meta"><div><h3>${p.name}</h3><p>${p.desc||'Freshly prepared by 4M COFFEE.'}</p></div><span class="price">${money(p.price)}</span></div></div></article>`).join('')}</div></div>`}).join('')}
     function showAdminPanel(){document.getElementById('adminOverlay').classList.add('open');refreshAdmin()}
     function closeAdmin(){document.getElementById('adminOverlay').classList.remove('open')}
     document.getElementById('adminFabButton').addEventListener('click',function(event){event.preventDefault();event.stopPropagation();showAdminPanel()},{passive:false});document.getElementById('closeAdmin').addEventListener('click',closeAdmin);
